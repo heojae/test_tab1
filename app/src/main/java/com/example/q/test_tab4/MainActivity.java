@@ -181,6 +181,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 position = (String) oParentView.getTag();
                 p=Integer.valueOf(position);
                 number2=strNumber[p];
+                
                 intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:"+number2));
                 startActivity(intent);
                 break;
@@ -192,7 +193,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 p=Integer.valueOf(position);
                 nation= strNation[p];
                 number2=strNumber[p];
-                
+
                 AlertDialog.Builder oDialog = new AlertDialog.Builder(this,
                         android.R.style.Theme_DeviceDefault_Light_Dialog);
                 strMsg="이름: "+name.getText()+"\n"+"전화번호: "+number.getText()+"\n"+"국적: "+ nation;
