@@ -181,7 +181,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 position = (String) oParentView.getTag();
                 p=Integer.valueOf(position);
                 number2=strNumber[p];
-                
+
                 intent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:"+number2));
                 startActivity(intent);
                 break;
